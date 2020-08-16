@@ -1,4 +1,4 @@
-/*Пошук поділом навпіл, не робе!!!!*/
+/*Пошук поділом навпіл*/
 
 #include <stdio.h>
 
@@ -24,7 +24,7 @@ int main(){
     else r = k;
   }
   if(m[k] == x)
-    printf("%d\n", k);
+    printf("%d\n", ++k);
   else
     printf("empty");
 }
@@ -38,7 +38,7 @@ int write_array(int m[N]){
 int sort_array(int m[N]){
   int i = 0, t;
 
-  while (i < N) {
+  while (i < N - 1) {
     if(m[i + 1] >= m[i])
       ++i;
     else{
