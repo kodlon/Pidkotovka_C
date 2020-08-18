@@ -13,12 +13,12 @@ void write_array(double *array, int n);
 
 int main(){
   int n;
-  double *array;
+  //double *array;
 
   scanf("%d", &n);
 
-  array = (double*) malloc(n * sizeof(double));
-  
+  double *array = (double*) malloc(n * sizeof(double));
+
   write_array(array, n);
   bubble_sort(array, n);
   printf("Sorted:\n");
