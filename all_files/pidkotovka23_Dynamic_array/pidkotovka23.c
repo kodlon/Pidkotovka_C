@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 void bubble_sort(double *array, int n);
-double linear_search(double *array, int n);
+void linear_search(double *array, int n);
 void print_array(double *array, int n);
 void write_array(double *array, int n);
 
@@ -24,7 +24,7 @@ int main(){
   print_array(array, n);
   linear_search(array, n);
   free(array);
-  
+
   return 0;
 }
 
@@ -54,7 +54,7 @@ void bubble_sort(double *array, int n){
   }
 }
 
-double linear_search(double *array, int n){
+void linear_search(double *array, int n){
   printf("Key?\n");
   double x;
   scanf("%lf", &x);
