@@ -53,6 +53,6 @@ void scan_array(double **matrix, int height, int width){
 
 void clear_memory(double **matrix, int width){
   for (int i = 0; i < width; i++)
-    free(matrix);
+    free(matrix[i]);
   free(matrix);
 }
