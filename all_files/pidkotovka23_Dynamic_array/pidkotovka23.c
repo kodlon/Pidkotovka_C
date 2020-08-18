@@ -17,10 +17,8 @@ int main(){
 
   scanf("%d", &n);
 
-  for (int i = 0; i < n; i++) {
-    array = (double*) malloc(n * sizeof(double));
-  }
-
+  array = (double*) malloc(n * sizeof(double));
+  
   write_array(array, n);
   bubble_sort(array, n);
   printf("Sorted:\n");
