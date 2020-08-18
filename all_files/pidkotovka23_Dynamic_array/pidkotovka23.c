@@ -13,7 +13,6 @@ void write_array(double *array, int n);
 
 int main(){
   int n;
-  //double *array;
 
   scanf("%d", &n);
 
