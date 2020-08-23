@@ -1,12 +1,12 @@
 /*Робота з рядками. Програма підраховує кількість пробілів.
-  -0 символ 
+  -0 символ
   -scanf("%19s", str), текст до пробіла
   -fgets(str, N, stdin), пробіли можна
   -sprintf(str, ... , Narg);, записує в рядок
   -sscanf(str, ... , Narg);, зчитує з рядка*/
 
 #include <stdio.h> // isdigit, isspace, isalpha, isalnum, islowerm, isupper;
-#include <string.h> //strlen(1arg); strcpy(1to, 2from); strcat(1to, 2from); strcat(1arg, 2arg);
+#include <string.h> //strlen(1arg); strcpy(1to, 2from); strcat(1to, 2from); strcmp(1arg, 2arg)(це порівняння за словником);
 
 int main(){
   char str[100];
